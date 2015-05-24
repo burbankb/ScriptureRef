@@ -20,12 +20,8 @@ public class OutputActivity extends ActionBarActivity {
         String chapter = intent.getStringExtra("chapter");
         String verse = intent.getStringExtra("verse");
 
-        TextView editText = (TextView) findViewById(R.id.book);
-        editText.setText(book);
-        editText = (TextView) findViewById(R.id.chapter);
-        editText.setText(chapter);
-        editText = (TextView) findViewById(R.id.verse);
-        editText.setText(verse);
+        TextView editText = (TextView) findViewById(R.id.textBox);
+        editText.setText("Your favorite scripture is " + book + " " + chapter + ":" +verse);
 
     }
 
